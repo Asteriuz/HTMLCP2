@@ -15,7 +15,7 @@ export default function ExcluirProdutos() {
 
   const handleDelete = () => {
     ListaProdutos.splice(ListaProdutos.indexOf(produtoRecuperadoPorId), 1);
-    alert("Produto excluído com sucesso!");
+    // alert("Produto excluído com sucesso!");
     navigate("/produtos");
   };
 
@@ -23,9 +23,9 @@ export default function ExcluirProdutos() {
   return (
     <div>
       <div>
-        <h1>Excluir Produtos</h1>
+        <h2>Excluir Produtos</h2>
         <div>
-          <h2>Você tem certeza que deseja excluir o produto abaixo?</h2>
+          <h3>Você tem certeza que deseja excluir o produto abaixo?</h3>
           <p>Nome do Produto : {produtoRecuperadoPorId.nome}</p>
           <p>Preço do Produto : {produtoRecuperadoPorId.preco}</p>
         </div>

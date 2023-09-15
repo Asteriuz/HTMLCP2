@@ -36,24 +36,21 @@ export default function EditarProdutos() {
     <>
       <h1>EditarProdutos</h1>
       <div>
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <legend>Produto selecionado</legend>
-            <div>
-              <input type="hidden" name="id" />
-            </div>
-            <div>
-              <label htmlFor="idNome">Nome:</label>
-              <input type="text" name="nome" id="idNome" value={produto.nome} onChange={handleChangeProduto} />
-            </div>
-            <div>
-              <label htmlFor="idPreco">Preço:</label>
-              <input type="number" name="preco" id="idPreco" value={produto.preco} onChange={handleChangeProduto} />
-            </div>
-            <div>
-              <button>EDITAR</button>
-            </div>
-          </fieldset>
+        <form id="form-task" onSubmit={handleSubmit}>
+          <div>
+            <input type="hidden" name="id" />
+          </div>
+          <div className="input">
+            <input className='input-field' type="text" name="nome" id="idNome" value={produto.nome} onChange={handleChangeProduto} required />
+            <label className='input-label' htmlFor="idNome">Nome</label>
+          </div>
+          <div className="input">
+            <input className='input-field' type="number" name="preco" id="idPreco" value={produto.preco} onChange={handleChangeProduto} required />
+            <label className='input-label' htmlFor="idPreco">Preço</label>
+          </div>
+          <div className="action">
+            <button type="submit">EDITAR</button>
+          </div>
         </form>
       </div>
     </>

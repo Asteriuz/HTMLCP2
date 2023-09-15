@@ -2,10 +2,12 @@ import { ListaProdutos } from "../Components/ListaProdutos";
 import { Link } from "react-router-dom";
 import { AiFillEdit } from "react-icons/ai";
 import { AiFillDelete } from "react-icons/ai";
+import { AiFillPlusCircle } from "react-icons/ai";
 import  styles from "./Table.module.css";
 
 export default function Produtos() {
   document.title = "Produtos";
+
   return (
     <>
       <h2>Produtos</h2>
@@ -36,6 +38,13 @@ export default function Produtos() {
               </td>
             </tr>
           ))}
+          <tr>
+            <td colSpan="4">
+              <Link to="/adicionar/produtos">
+                <AiFillPlusCircle size={30} />
+              </Link>
+            </td>
+          </tr>
         </tbody>
       </table>
     </>
