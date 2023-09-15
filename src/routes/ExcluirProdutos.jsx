@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ListaProdutos } from '../Components/ListaProdutos';
+import styles from './Remove.module.css';
 
 export default function ExcluirProdutos() {
 
@@ -28,7 +29,7 @@ export default function ExcluirProdutos() {
           <p>Nome do Produto : {produtoRecuperadoPorId.nome}</p>
           <p>Preço do Produto : {produtoRecuperadoPorId.preco}</p>
         </div>
-        <div>
+        <div className={styles.buttons}>
           <button onClick={handleDelete}>EXCLUIR</button>
           <button onClick={() => navigate("/produtos")}>CANCELAR</button>
         </div>

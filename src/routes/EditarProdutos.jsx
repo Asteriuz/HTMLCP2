@@ -9,7 +9,7 @@ export default function EditarProdutos() {
   //Recuperando o ID com o HOOK useParams()
   const { id } = useParams();
 
-  const navigate  = useNavigate();
+  const navigate = useNavigate();
 
   // const produtoRecuperadoPorId = ListaProdutos.filter((produto)=>{
   //   if(produto.id == parseInt(id)){
