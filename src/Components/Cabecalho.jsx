@@ -5,7 +5,7 @@ export default function Cabecalho(props) {
     return (
         <>
             <header className={styles.header}>
-                <h1>SPA</h1>
+                <h1 className={styles.title}>SPA</h1>
                 <ul className={styles.lista}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/produtos">Produtos</Link></li>
