@@ -8,7 +8,7 @@ export default function Produtos() {
   document.title = "Produtos";
   return (
     <>
-      <h1>Produtos</h1>
+      <h2>Produtos</h2>
 
       <table className={styles.table}>
         <thead>

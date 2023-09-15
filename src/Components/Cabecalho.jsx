@@ -4,9 +4,9 @@ import styles from "./Cabecalho.module.css";
 export default function Cabecalho(props) {
     return (
         <>
-            <header>
-                <h1>Teste, {props.teste}</h1>
-                <ul>
+            <header className={styles.header}>
+                <h1>SPA</h1>
+                <ul className={styles.lista}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/produtos">Produtos</Link></li>
                     {/* <li><Link to="/editar/produtos/1">Produto - 1</Link></li> */}

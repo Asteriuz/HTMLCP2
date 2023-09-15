@@ -1,8 +1,12 @@
-ul {
-    list-style: none;
-    padding: 10;
+.header {
+    margin-bottom: 48px;
 }
 
-li {
-    margin: 10px 0px;
+.lista {
+    list-style: none;
+    padding: 10;
+
+    & > li {
+        margin: 10px 0px;
+    }
 }
